@@ -7,10 +7,6 @@ const Navbar = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    console.log(isOpen);
-  }, [isOpen]);
-
-  useEffect(() => {
     getCategories()
       .then((newCategories) => setCategories(newCategories));
   }, []);
