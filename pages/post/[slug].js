@@ -3,7 +3,7 @@ import { Author, Categories, Comments, CommentsForm, PostWidget } from '../../co
 import PostDetail from '../../components/PostDetail';
 import { getPostDetails, getPosts } from '../../services';
 
-const slug = ({ post }) => (
+const PostDetails = ({ post }) => (
   <div className="container mx-auto px-10 mb-8">
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
       <div className="col-span-1 lg:col-span-8">
@@ -22,7 +22,7 @@ const slug = ({ post }) => (
   </div>
 );
 
-export default slug;
+export default PostDetails;
 
 // eslint-disable-next-line react/function-component-definition
 export async function getStaticProps({ params }) {
